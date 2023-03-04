@@ -1,0 +1,105 @@
+<!-- <!DOCTYPE html>
+	predefined function
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>events</title>
+</head>
+<body>
+   <button onclick="klik()">click</button>
+   <p onmouseover="klik()">over</p>
+<script type="text/javascript">
+	function klik(){
+		alert()
+	}
+</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<!-- <script type="text/javascript">
+		onload= function(){
+			var info=document.getElementById("hi").innerHTML
+			console.log(info)
+		}
+	</script> -->
+</head>
+<body>
+	<!-- <p id="hi">hi</p> -->
+	<!-- <p class="inn">p tag</p>
+	<h1 class="inn">h1 tag</h1>
+	<span class="inn">span</span>
+	<button onclick= dhiraja()>click</button>
+
+
+	<script type="text/javascript">
+		function dhiraja(){
+			var x=document.getElementsByClassName('inn')
+			console.log(x)
+			for(i=0;i<x.length;i++) console.log(x[i].innerHTML)
+		}
+
+
+		var x= document.getElementById('hi').innerHTML
+		var x=document.querySeelectorAll()
+		console.log(x)
+	</script> -->
+
+	 <!-- <p id="mm">hi</p>
+
+	 <script type="text/javascript">
+	 	
+	 </script> -->
+
+	 <!-- <textarea id="text" onkeyup="countt()"></textarea>
+	 <p >count: <span id="pid"></span></p> -->
+
+
+
+
+	 	<textarea onkeyup="textinput()" id="texxtarea" cols="30" rows="10" ></textarea>
+	 	<p>left:<span id="left"></span></p>
+
+		<script>
+			function textinput(){
+				var textcount = document.getElementById('texxtarea').value.length
+				if(textcount<40){
+					document.getElementById("left").innerHTML= 40-textcount
+				}
+				else{
+					document.getElementById("left").innerHTML="limit exceeded"
+				}
+			}
+		</script>
+
+
+
+
+	 <!-- <script type="text/javascript">
+	 	function countt(){
+	 		var len = document.getElementById("text").value
+		 	if(len.length<40){
+		 		document.getElementById("pid").innerHTML=40-len.length
+		 	}
+		 	else{
+		 		document.getElementById("pid").innerHTML="exceeded"
+		 	}
+	 	}
+
+	 	
+
+	 </script> -->
+
+
+
+
+
+
+</body>
+</html>
